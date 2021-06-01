@@ -4,6 +4,8 @@ namespace HairSalon.Models
 {
     public class Stylist
     {
+        private static List<Stylist> _instances = new List<Stylist> {};
+
         public Stylist()
         {
             this.Clients = new HashSet<Client>();
