@@ -60,12 +60,22 @@ MySQL is a type of database software used to create, edit, query, and manage SQL
 
 ##### Installing Packages
 
-- Navigate to the TODO folder in the command line
+- Navigate to the HairSalon folder in the command line
 - Use the command `dotnet restore`
 
 <details>
 
   <summary>Expand for Database Installation Essentials!</summary>
+
+### Import Database Using MySQL Workbench
+
+- Open MySQL Workbench
+- In the Admin Tab under Management Click on Data Import
+- Select `Import from Self-Contained File` and navigate to HairSalon.Solution/hr_williams.sql
+- Under `Default Scheme to be Imported To` select the `New` Button
+- Enter a name for your database, click *ok*
+- Click `Start Import`
+
 
 ### Database Connection
 
@@ -77,32 +87,14 @@ Create a connection string to connect the database to the web application
 ```
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=hr_williams;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
+      "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DATABASE-NAME-HERE];uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
   }
 }
 ```
 
-- TODO CHANGE DBNAME
-- Put in your MySQL password in `pwd=YourPassword`. Change the server, port, and uid if necessary.
+- Update all the information above in the square brackets. If you named the database the same name as the .sql file that was imported, then `database =` should be `hr_williams`. Change the server, port, and uid if necessary.
 
-### Import Database Using Entity Framework Core
 
-1. Navigate to HairSalon production directory in terminal
-2. Use the command `dotnet ef database update` to generate the database through Entity Framework Core
-
-### Update Database Using Entity Framework Core
-
-1. Write any new code you wish to add to the database. Use the command `dotnet build` to check for any compiling errors. If no errors, proceed to step 2.
-
-### Update Database Using MySQL Workbench
-
-1. Open MySQL Workbench
-2. Click on Server > Data Import in the top navigation bar
-3. Select `Import from Self-Contained File`
-4. Select the `Default Target Schema` or create new schema
-5. Select all Schema Objects you would like to import
-6. Select `Dump Structure and Data`
-7. Click `Start Import`
 
 </details>
 
