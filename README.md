@@ -1,25 +1,17 @@
 <div align="center">
 
-# Application Name
+# Eau Claire's Salon
 
 </div>
 
-<h3 align="center">Description of application, date-2021</h3>
+<h3 align="center">An application for a Salon Owner, 6/1/2021</h3>
 <h4 align="center"> By HR Williams</h4>
 
 ## Description
 
-Purpose usage, detailed explanation what is does and any other information you want users and other developers to have
+An application created for an Epicodus independent project which allows a Salon owner to keep track of her stylists and the clients in relation to the styliests.
 
 ## Specifications/User Stories
-
-<details>
-  <summary>Expand</summary>
-
-### Describe: Name()
-
-| Test | Expect |
-| ---- | ------ |
 
 </details>
 
@@ -33,9 +25,9 @@ Purpose usage, detailed explanation what is does and any other information you w
 
 ##### Open Locally
 
-- Click on the link to my repository: [My Repository]()
+- Click on the link to my repository: [https://github.com/HR-Williams/HairSalon.Solution]()
 - Click on the green "Code" button and copy the repository URL
-- Open your terminal and use the command `git clone REPO URL HERE` into the directory you would like to clone the repository
+- Open your terminal and use the command `git clone https://github.com/HR-Williams/HairSalon.Solution` into the directory you would like to clone the repository
 - Open in text editor to view code and make changes
 
 ##### Installing .NET
@@ -63,7 +55,7 @@ MySQL is a type of database software used to create, edit, query, and manage SQL
 
 ##### Compiling
 
-- Navigate to the TODO folder in the command line
+- Navigate to the HairSalon folder in the command line
 - Use the command `dotnet build` to compile
 
 ##### Installing Packages
@@ -85,7 +77,7 @@ Create a connection string to connect the database to the web application
 ```
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=top_restaurants;uid=root;pwd=password;"
+      "DefaultConnection": "Server=localhost;Port=3306;database=hr_williams;uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
   }
 }
 ```
@@ -95,14 +87,12 @@ Create a connection string to connect the database to the web application
 
 ### Import Database Using Entity Framework Core
 
-1. Navigate to TODO directory in terminal
+1. Navigate to HairSalon production directory in terminal
 2. Use the command `dotnet ef database update` to generate the database through Entity Framework Core
 
 ### Update Database Using Entity Framework Core
 
 1. Write any new code you wish to add to the database. Use the command `dotnet build` to check for any compiling errors. If no errors, proceed to step 2.
-2. To update the database with any changes made to the code, use the command `dotnet ef migrations add [MigrationsName]`
-3. Use the command `dotnet ef database update` to update the database
 
 ### Update Database Using MySQL Workbench
 
@@ -118,13 +108,14 @@ Create a connection string to connect the database to the web application
 
 ##### View In Browser
 
-- To view in browser, navigate to TODO folder in the command line
+- To view in browser, navigate to HairSalon folder in the command line
 - Use the command `dotnet run` to execute the compiled code and start a localhost
 - In browser navigate to http://localhost:5000
 
 ## Known Bugs
 
-TODO
+- I would like to finish Edit functionality for client
+- I would like to style the app
 
 ## Support and Contact Details
 
@@ -135,9 +126,7 @@ If any errors or bugs occur with installation, delete both bin and obj folders a
 - .NET Core 5.0.1
 - ASP.NET Core MVC
 - ASP.NET Core Razor Pages
-- Bootstrap
 - C#
-- CSS
 - Entity Framework Core
 - GitHub
 - HTML
